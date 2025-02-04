@@ -1,0 +1,15 @@
+{
+  "name": "54-grupe-js-intro",
+  "version": "1.0.0",
+  "description": "**labas rytas** , Lietuva!",
+  "main": "index.js",
+  "scripts": {
+    "function": "node --watch js/05-function.js",
+    "for": "node --watch js/04-for.js",
+    "if": "node --watch js/03-if.js",
+    "test": "echo \"Labas rytas, Lietuva\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
