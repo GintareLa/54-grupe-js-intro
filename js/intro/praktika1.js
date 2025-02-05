@@ -182,7 +182,7 @@ console.log('......');
 //  yra keliamieji.Kurį operatorių naudoti?
 
 function keliamiejiNekeliamieji(year) {
-    if (year / 4 && year % 2 === 0) {
+    if ((year % 4 === 0) && (year % 100 === 0) || (year % 400 === 0)) {
         return 'Keliamieji';
     } else {
         return 'Nekeliamieji';
