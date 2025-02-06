@@ -4,6 +4,7 @@
   "description": "**labas rytas** , Lietuva!",
   "main": "index.js",
   "scripts": {
+    "strings:method": "node --watch js/variables/08-string-method.js",
     "strings": "node --watch js/variables/07-string.js",
     "numbers": "node --watch js/variables/06-numbers.js",
     "function": "node --watch js/intro/05-function.js",
