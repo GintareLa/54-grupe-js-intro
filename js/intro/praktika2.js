@@ -146,12 +146,7 @@ console.log('......');
  * Parašykite funkciją, kuri grąžina atsitiktinį procentą nuo
  *  0 iki 100 (sveikasis skaičius).
  */
- function apvalinimas (){
-
- }
- for let (i =0, i <100, i ++) {
-    console.log
- }
+ 
 /**
  * [BONUS] Užduotis Nr. 1
  * Parašykite funkciją, kuri priima skaičių ir grąžina masyvą su jo daugybos 
