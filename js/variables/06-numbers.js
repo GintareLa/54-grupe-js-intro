@@ -116,13 +116,16 @@ console.log(Math.exp(3), Math.E ** 3);
 console.log('pow');
 console.log(Math.pow(2 , 2), 2 ** 2);
 console.log(Math.pow(2 , 3), 2 ** 3);
+console.log(Math.pow(2, 4), 2 ** 4);
+console.log(Math.pow(5, 4), 5 ** 4);
 
 
 // hypot 
 console.log('hypot');
 console.log(Math.hypot(3 , 2), Math.sqrt (3 ** 2 + 2 ** 2));
 console.log(Math.hypot(9 , 6), Math.sqrt (9 ** 2 + 6 ** 2));
-
+console.log(Math.hypot(1, 1, 1), Math.sqrt(1 ** 2 + 1 ** 2 + 1 ** 2));
+console.log(Math.hypot(4, 4, 4), Math.sqrt(4 ** 2 + 4 ** 2 + 4 ** 2));
 
 // min
 console.log('min');
@@ -149,6 +152,13 @@ console.log(Math.random());
 
 // 1....10
 // 27....114
+/**
+ * Generuojamas atsitiktinis skaicius intervale (imtinai).
+ * @param {number} min Nuo
+ * @param {number} max Iki
+ * @returns {number} Atsitiktinis sveikasis skaicius
+ */
+
 
 function randomNumber (min, max) {
     return Math.floor(Math.random () * (max - min +1)) + min;
@@ -159,9 +169,13 @@ for ( let i = 0; i < 10; i ++) {
     console.log(i, randomNumber (10, 20));
 }
 
+// pasidaryti savo func, kuri grazina skaiciu su ribotu kiekiu skaitmenu po kablelio
+// kas yra i++?
+// codewars
 
 // toFixed padaro string (zodzius)
 console.log ('toFixe');
+
 console.log ((3.1415).toFixed ());
 console.log ((3.1415).toFixed (1));
 console.log ((3.1415).toFixed (2));
@@ -204,7 +218,7 @@ console.log(k);
 
 ++ k;
 console.log(k);
-
+/*
 // k ++ panaudoja, ir padidina
 // ++ k padidina
 // k = k + 1;
@@ -212,13 +226,17 @@ console.log(k);
 //k ++;
 //++ k;
 
-/*
-console.log('-------');
-/*let k = 10;
-
-console.log(k--);
-console.log(k--);
-console.log(k--);
-console.log(k--);
-console.log(k--);
 */
+
+let k6 = 10;
+
+console.log(k6--);
+console.log(k6--);
+console.log(k6--);
+console.log(k6--);
+console.log(k6--);
+
+k = k + 1;
+k += 1;
+k++;
+++k;

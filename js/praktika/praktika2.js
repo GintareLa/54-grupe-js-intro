@@ -141,11 +141,19 @@ console.log('......');
  console.log('Penkta užduotis');
  console.log(sumaSkaiciu(123));
  console.log('......');
-/**
- * Užduotis Nr. 6
+*/
+ /* Užduotis Nr. 6
  * Parašykite funkciją, kuri grąžina atsitiktinį procentą nuo
  *  0 iki 100 (sveikasis skaičius).
  */
+console.log('6 uzduotis');
+console.log();
+function procentai() {
+    return Math.floor(Math.random() * 101);
+}
+// for (let i = 0; i < 100; i++)
+    console.log(procentai()); 
+console.log('-----------');
  
 /**
  * [BONUS] Užduotis Nr. 1

@@ -3,15 +3,21 @@ FUNCTION - funcija - perpanaudojamas logikos blokas
 100 sveikieji skaiciai
 1.21 
 */
-function kainaSuPvm(bazineKaina) {
-    console.log('gauta kaina:', bazineKaina);
-    return bazineKaina * 1.21;
+const price1 = kainaSuPVM(100);
+const price2 = kainaSuPVM(200);
+const price3 = kainaSuPVM(5);
+function kainaSuPVM(bazineKaina) {
+    let galutineKaina = 0;
 
+    if (bazineKaina <= 100) {
+        galutineKaina = bazineKaina + ' Eur, be PVM';
+    } else {
+        galutineKaina = bazineKaina * 1.21 + ' Eur, su PVM';
+    }
 
+    return galutineKaina;
 }
-const price1 = kainaSuPvm(100);
-const price2 = kainaSuPvm(200);
-const price3 = kainaSuPvm(5);
+
 
 console.log(price1);
 console.log(price2);

@@ -122,3 +122,7 @@ console.log(troliai2);
 const troliai3 = `C:\\Documents\troliai\\rekia\\namie`
 console.log(troliai3);
 
+// String.raw`C:\Documents\troliai\rekia\namie`;
+
+const broliai = `String.raw\`C:\\Documents\\troliai\\rekia\\namie\`;`;
+console.log(broliai);

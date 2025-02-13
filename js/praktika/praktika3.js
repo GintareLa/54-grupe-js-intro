@@ -254,6 +254,15 @@ console.log(palyginkZodzius(simb1, simb2));
 console.log('.............');
 
 // 9. Pašalinkite visus skaičius iš teksto "a1b2c3".
+const visi = 'a1b2c3';
+
+for (i =0; i< visi.length; i++); {
+  if(visi.includes(strings))  {
+    return raides;
+
+  }
+}
+*/
 // 10. Suskaičiuokite, kiek tekste "a1b2c3" yra skaičių.
 // 11. Iš teksto "HTML CSS JS" paimkite pirmąją kiekvieno žodžio raidę ir sudėkite jas į vieną string'ą.
 // 12. Raskite pirmą žodį string'e "Hello World!".
