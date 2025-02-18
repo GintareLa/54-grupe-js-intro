@@ -218,6 +218,7 @@ console.log(k);
 
 ++ k;
 console.log(k);
+console.log();
 /*
 // k ++ panaudoja, ir padidina
 // ++ k padidina

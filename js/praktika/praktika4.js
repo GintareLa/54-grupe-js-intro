@@ -22,13 +22,6 @@ console.log('2 užduotis');
 console.log(arLyginis(8));
 console.log(arLyginis(7));
 console.log('.............');
-console.log('.............');
-console.log('.............');
-console.log('.............');
-console.log();
-
-
-
 
 
 // 3. Sukurkite funkciją, kuri priima du skaičius ir grąžina didesnįjį.
@@ -85,7 +78,7 @@ console.log('.............');
 // 7. Parašykite funkciją, kuri tikrina, ar žodis prasideda raide "A"(nesvarbu, didžioji 
 // ar mažoji).// 
 // (Pvz., pradedaA("Automobilis") → true, pradedaA("namas") → false.) 
-// node js/intro/praktika4.js
+// node js/praktika/praktika4.js
 
 function prasidedaA(word) {
     if (word.toLowerCase().charAt(0).includes('a')) {
@@ -115,7 +108,7 @@ console.log(arDalus(33));;
 console.log('.............');
  
 // 9. Naudodami for ciklą, išveskite visus skaičius nuo 10 iki 1 mažėjančia tvarka.
-// node js/intro/praktika4.js
+//  node js/praktika/praktika4.js
 console.log('9 užduotis');
 for (let i = 10; i >= 1; i--) {
     console.log(i);   
@@ -209,18 +202,45 @@ console.log(keistiRaide('banana'));
 console.log('.............');
  
 // 18. Sukurkite funkciją, kuri sugeneruoja stringą "**********"(10 žvaigždučių),
-//  naudojant for ciklą. node js/intro/praktika4.js
+//  naudojant for ciklą.  node js/praktika/praktika4.js
 console.log('18 užduotis');
 
 for (let i = 0; i <= 10; i++) {
     console.log('*');
 }
 console.log('.............');
-// 19. Parašykite funkciją, kuri priima skaičių ir grąžina visus jo 
+// 19. Parašykite funkciją, kuri priima skaičių ir grąžina 
+// visus jo 
 // daliklius(išskyrus 1 ir patį save).
 // (Pvz., dalikliai(12) →[2, 3, 4, 6].)
+let eile = [];
+ function dalikliai(n) {
+    for( i = 2; i < n; i++) {
+        if (n % i === 0) {
+            eile = eile.concat(i);
+        }
+
+    }
+    return eile;
+ }
+ console.log('19 užduotis');
+ console.log(dalikliai(12));
+ console.log('.............');
  
 // 20. Sukurkite funkciją, kuri tikrina, ar pateiktas skaičius yra pirminis.
 // (Pvz., arPirminis(7) → true, arPirminis(8) → false.)
 
+let eileSkaiciu = 0;
+function arPirminis (s) {
+    for ( i = 2; i < s; i++) {
+        if (s % i === 0) {
+            eileSkaiciu += i;
+        }
+    }
+    return eileSkaiciu === 0;
+ }
+ console.log('20 užduotis');
+ console.log(dalikliai(7));
+ console.log(dalikliai(8));
+ console.log('.............');
 

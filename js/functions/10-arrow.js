@@ -31,11 +31,11 @@ console.log(`${n1} * ${n2} = ${sandauga1(n1, n2)}`);
 
 //dalyba
 function dalyba(a, b) {
-    return a/ b;
+    return a / b;
 }
 console.log(`${n1} / ${n2} = ${dalyba(n1, n2)}`);
 
-//jeigu, logikos bloke yra tik 1 procedura
+//jeigu, logikos bloke (tie kur yra kabliataskis- return) yra tik 1 procedura
 // galima nerasyti{} ir return
 const dalyba1 = (a, b) => {
     return a / b;
@@ -43,15 +43,15 @@ const dalyba1 = (a, b) => {
 console.log(`${n1} / ${n2} = ${dalyba1(n1, n2)}`);
 
 //kitas budas, kai nerasome {} ir return
-const dalyba3 = (a, b) => a/ b;
+const dalyba3 = (a, b) => a / b;
 console.log(`${n1} / ${n2} = ${dalyba3(n1, n2)}`);
 
-function kvadratu (a) {
+function kvadratu(a) {
     return a * a;
 }
 console.log(`${n1} * ${n1} = ${kvadratu(n1, n1)}`);
 
-//jeigu,parametru bloke yra tik 1 parametras
+//jeigu,parametru bloke (pvz.: a) yra tik 1 parametras
 //galima nerasyti () 
 
 const kvadratu1 = a => a * a;
@@ -76,10 +76,10 @@ console.log(nameInit('Gintare'));
 // 3b. Pavardenis -> P.
 
 // 4 V.P.
-function inicialiai (fullName) {
+function inicialiai(fullName) {
     const nameParts = fullName.split(' ');
     const firstname = nameParts[0][0] + ' . ';
-    const lastname = nameParts [1][0] + ' . ';
+    const lastname = nameParts[1][0] + ' . ';
     return firstname + lastname;
 }
 console.log(inicialiai('Vardenis Pavrdenis'));

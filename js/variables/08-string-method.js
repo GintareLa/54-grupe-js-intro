@@ -136,7 +136,7 @@ console.log('vasara'.includes('x'));
 console.log('terminator x'.includes('x'));
 console.log('terminator x'.includes('g'));
 
-console.clear();
+console.log('----------');
 
 function symbolAtPosition(text, pos) {
     const index = pos >= 0 ? pos : (text.length + pos);
@@ -153,7 +153,7 @@ console.log(p.at(-2), p[p.length - 2], symbolAtPosition(p, -2));
 console.log(p.at(-3), p[p.length - 3], symbolAtPosition(p, -3));
 console.log(p.at(-33), p[p.length - 33], symbolAtPosition(p, -33));
 
-console.clear();
+console.log('----------');
 console.log('pomidoras'.charAt(0));
 console.log('pomidoras'.charAt(1));
 console.log('pomidoras'.charAt(2));
@@ -162,7 +162,7 @@ console.log('pomidoras'.charAt(-1));
 console.log('pomidoras'.charAt(-2));
 console.log('pomidoras'.charAt(-3), 'pomidoras'[-3]);
 
-console.clear();
+console.log('----------');
 console.log('ABCDEF'.charCodeAt(0));
 console.log('ABCDEF'.charCodeAt(1));
 console.log('ABCDEF'.charCodeAt(2));
@@ -178,12 +178,12 @@ console.log(String.fromCharCode(2222));
 console.log(String.fromCharCode(22222));
 console.log(String.fromCharCode(222222));
 
-console.clear();
+console.log('----------');
 console.log('pomidoras'.concat('aaa'));
 console.log('pomidoras'.concat('aaa', 'bbb'));
 console.log('pomidoras' + 'aaa' + 'bbb');
 
-console.clear();
+console.log('----------');
 console.log('pomidoras'.endsWith('aaa'));
 console.log('pomidoras'.endsWith('a'));
 console.log('pomidoras'.endsWith('s'));
@@ -192,7 +192,7 @@ console.log('pomidoras'.endsWith('ras'));
 console.log('pomidoras'.endsWith('Ras'));
 console.log('pomidoras'.endsWith('pomidoras'));
 
-console.clear();
+console.log('----------');
 console.log('pomidoras'.startsWith('a'));
 console.log('pomidoras'.startsWith('p'));
 console.log('pomidoras'.startsWith('pr'));
@@ -206,7 +206,7 @@ console.log('selfy.png'.endsWith('.jpg'));
 console.log('https://abc.lt'.startsWith('https://'));
 console.log('http://abc.lt'.startsWith('http://'));
 
-console.clear();
+console.log('----------');
 console.log('pomidoras'.includes('a'));
 console.log('pomidoras'.includes('r'));
 console.log('pomidoras'.includes('x'));
@@ -214,7 +214,7 @@ console.log('pomidoras'.includes('pom'));
 console.log('pomidoras'.includes('ido'));
 console.log('pomidoras'.includes('ras'));
 
-console.clear();
+console.log('----------');
 console.log('pomidoras'.indexOf('a'));
 console.log('pomidoras'.indexOf('r'));
 console.log('pomidoras'.indexOf('x'));
@@ -236,13 +236,13 @@ console.log('pomidoras storas'.indexOf('o', 7));
 console.log('pomidoras storas'.indexOf('o', 12));
 console.log('pomidoras storas'.indexOf('o', 13));
 
-console.clear();
+console.log('----------');
 console.log(20, 'aaaaaaaaaaaaaaaaaaaa');
 console.log(5, 'a'.repeat(5));
 console.log(7, 'b-'.repeat(7));
 console.log(7, 'labas, '.repeat(3));
 
-console.clear();
+console.log('----------');
 
 let summer = 'vasara';
 console.log(summer);
@@ -264,7 +264,7 @@ console.log(bird);
 
 console.log('Ananasas'.replaceAll('a', '-'));
 
-console.clear();
+console.log('----------');
 console.log('pomidoras'.slice());
 console.log('pomidoras'.slice(0));
 console.log('pomidoras'.slice(1));
@@ -347,7 +347,7 @@ console.log(sentence);
 console.log(sentence.length);
 
 
-console.clear();
+console.log('----------');
 
 console.log('duona'.split('o'));
 console.log('duona'.split('u'));
