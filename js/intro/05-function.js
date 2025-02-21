@@ -49,3 +49,20 @@ console.log(algoritmas(7));
 console.log(algoritmas(8));
 console.log(algoritmas(9));
 console.log(algoritmas(10));
+
+console.clear();
+
+console.log(5/0);
+console.log("5" + 3);
+console.log("5" - 3);
+console.log(typeof "Hello");
+console.log(0 ===false);
+console.log(parseInt("10px")); 
+console.log(null ==undefined);
+console.log(typeof NaN);
+ 
+
+
+const arr = [1, 2, 3]; 
+const index = arr.indexOf(2); 
+console.log(index); 

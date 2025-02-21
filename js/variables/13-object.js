@@ -17,6 +17,7 @@ console.log();
 console.log(jonas['name']);
 console.log(jonas['age']);
 console.log(jonas['isMarried']);
+console.log();
 
 const luckyNumbers = {
     0: 10,
@@ -32,7 +33,7 @@ console.log(luckyNumbers['1'], luckyNumbers[1]);
 console.log(luckyNumbers['2'], luckyNumbers[2]);
 console.log(luckyNumbers['3'], luckyNumbers[3]);
 console.log(luckyNumbers['4'], luckyNumbers[4]);
-
+console.log();
 //dedasi kableliai po kiekvienos eilutes
 const crazy = {
     title: 'pavadinimas....',
@@ -53,6 +54,7 @@ console.log(crazy[7]);
 
 console.log(crazy.title);
 console.log(crazy.isMarried);
+console.log();
 
 const maryte = {
     name: 'Maryte',
@@ -90,13 +92,15 @@ const maryteMarksAverage = marksTotalSum / marksCount;
 console.log('Pazymiu suma:', marksTotalSum);
 console.log('Pazymiu kiekis:', marksCount);
 console.log('Marytes pazymiu vidurkis:', maryteMarksAverage);
+console.log();
+
 
 console.log(maryte.parents.length);
 
 console.log(maryte.parents[0].name);
 console.log(maryte.parents[1].name);
+console.log();
 
-console.clear();
 
 for (let i = 0; i < maryte.parents.length; i++) {
     const parent = maryte.parents[i];
@@ -105,4 +109,30 @@ for (let i = 0; i < maryte.parents.length; i++) {
     console.log(parent.age);
     console.log(parent.isMarried);
     console.log(parent.marks);
+    
 }
+
+const countFatherMarks = maryte.parents[0].marks.length;
+let marksFatherVisaSuma = 0;
+for (let i = 0; i < maryte.parents[0].marks.length; i++) {
+   marksFatherVisaSuma += countFatherMarks;
+   averageFatherMarks = marksFatherVisaSuma / countFatherMarks;
+}
+
+console.log('Marytes tevo Juozapo pazymiu suma:', marksFatherVisaSuma);
+console.log('Marytes tevo Juozapo pazymiu kiekis:', countFatherMarks);
+console.log('Marytes tevo Juozapo pazymiu vidurkis:', averageFatherMarks);
+console.log();
+
+const countMotherMarks = maryte.parents[1].marks.length;
+let marksMotherTotal = 0;
+for (let i = 0; i < maryte.parents[1].marks.length; i++) {
+   marksMotherTotal += countMotherMarks;
+   averageMotherMarks = marksMotherTotal / countMotherMarks;
+}
+
+console.log('Marytes mamos Marijos pazymiu suma:',  marksMotherTotal);
+console.log('Marytes mamos Marijos pazymiu kiekis:', countMotherMarks);
+console.log('Marytes mamos Marijos pazymiu vidurkis:',  averageMotherMarks);
+console.log();
+

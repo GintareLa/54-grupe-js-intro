@@ -173,7 +173,7 @@ for ( let i = 0; i < 10; i ++) {
 // kas yra i++?
 // codewars
 
-// toFixed padaro string (zodzius)
+// toFixed padaro is numbers string (zodzius)
 console.log ('toFixe');
 
 console.log ((3.1415).toFixed ());

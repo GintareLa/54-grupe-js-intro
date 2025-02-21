@@ -75,4 +75,30 @@ console.log(students);
 
 students.sort((a, b) => a.name.length - b.name.length);
 console.log(students);
+console.log('-------------');
+
+
+//mazesnis -1
+//lygus 0
+//didesnis +1
+ // .sort iskrenta kad reiksme 0, tada jis juos palieka
+ // .sort iskrenta kad reiksme -1, tada jis juos palieka  
+ //.sort iskrenta kad reiksme +1, tada jis iskelia i prieki
+
+ //vardus pagal abecele su ternary 1 budas
+students.sort((a, b) => a.name < b.name? -1 :  a.name === b.name? 0 : 1);
+console.log(students);
+
+ //vardus pagal abecele su ternary 2 budas
+function sortStudentsByName(a,b) {
+    if (a.name < b.name) {
+        return -1;
+    } else if (a.name === b.name) {
+        return ;
+    } else {
+        return 1;
+    }
+}
+students.sort(sortStudentsByName);
+console.log(students);
 

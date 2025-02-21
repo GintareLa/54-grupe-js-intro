@@ -58,12 +58,14 @@ console.log(Array.isArray([true]));
 
 
 
+console.log('------------');
 
 const studentsAt = ['Jonas', 'Maryte', 'Petras', 'Ona'];
 console.log(studentsAt[0]);
 console.log(studentsAt[1]);
 console.log(studentsAt[2]);
 console.log(studentsAt[3]);
+console.log('------------');
 console.log(studentsAt[studentsAt.length - 1]);
 console.log(studentsAt[studentsAt.length - 2]);
 console.log(studentsAt[studentsAt.length - 3]);
@@ -172,7 +174,7 @@ console.log(medziai);
 medziai.unshift('kedras')
 console.log(medziai);
 
-// .shift pasalina pirekyje
+// .shift pasalina priekyje
 medziai.shift()
 console.log(medziai);
 

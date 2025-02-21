@@ -161,7 +161,7 @@ console.log(uzd.trimStart());
 console.log('.............');
 console.log('.............');
 console.log('.............');
-console.clear();
+
 
 
 //Papildomos užduotys (sprendimams naudokite string metodus ir for ciklą 
@@ -255,16 +255,43 @@ console.log('.............');
 
 // 9. Pašalinkite visus skaičius iš teksto "a1b2c3".
 const visi = 'a1b2c3';
+const naujas =   visi.replaceAll('1','').replaceAll('2','').replaceAll('3', '');
 
-for (i =0; i< visi.length; i++); {
-  if(visi.includes(strings))  {
-    return raides;
-
-  }
-}
-*/
+for (let i =0; i < visi.length; i++); {
+    }
+console.log('9 Papildoma užduotis');
+console.log(naujas);
+console.log('.............');
 // 10. Suskaičiuokite, kiek tekste "a1b2c3" yra skaičių.
+
+
+function suskaiciuotiSkaicius(str) {
+  let sum = 0;
+
+  for (let i = 0; i < str.length; i++) {
+    if(str[i] >= '1' && str[i] <= '3') {
+     sum+= parseInt(str[i]);
+    } 
+  }
+  return sum;
+}
+console.log('10 Papildoma užduotis');
+console.log(suskaiciuotiSkaicius('a1b2c3'));
+console.log('.............');
+
 // 11. Iš teksto "HTML CSS JS" paimkite pirmąją kiekvieno žodžio raidę ir sudėkite jas į vieną string'ą.
+const text2 = 'HTML CSS JS';
+const t = text2[0] + '.' + text2[5] + '.' + text2[9] + '.';
+function sudetiPirmasRaides (text2) {
+  for (let i = 0; i < text2.length; i++) {
+    } 
+    return t;
+  }
+  
+  console.log('11 Papildoma užduotis');
+  console.log(sudetiPirmasRaides(text2));
+  console.log('.............');
+
 // 12. Raskite pirmą žodį string'e "Hello World!".
 console.log('12 Papildoma užduotis');
 const fraze = 'Hello World';
@@ -280,6 +307,7 @@ console.log(stringas.slice(-3));
 console.log('.............');
  
 // 14. Prie string'o "Likusios dienos: " pridėkite skaičių 5 iš daysLeft kintamojo.
+
 // 15. Tekste "mokytojas" pakeiskite pabaigą į "ėja", kad gautumėte "mokytoja".
 const text1 = 'Siandien mokytojas puikios nuotaikos';
 const text = text1.replace('mokytojas', 'mokytoja');

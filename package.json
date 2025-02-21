@@ -4,6 +4,11 @@
   "description": "**labas rytas** , Lietuva!",
   "main": "index.js",
   "scripts": {
+    "dest": "node --watch js/functions/18-dest.js",
+    "loops": "node --watch js/loop/17-loops.js",
+    "typeof": "node --watch js/functions/16-typeof.js",
+    "spread": "node --watch js/functions/15-spread.js",
+    "ref": "node --watch js/variables/14-ref.js",
     "object": "node --watch js/variables/13-object.js",
     "array:sort": "node --watch js/functions/12-array-sort.js",
     "array:hof": "node --watch js/variables/11-array-hof.js",
@@ -15,7 +20,8 @@
     "function": "node --watch js/intro/05-function.js",
     "for": "node --watch js/intro/04-for.js",
     "if": "node --watch js/intro/03-if.js",
-    "praktika": "node --watch js/praktika/praktika5.js",
+    "praktika": "node --watch js/praktika/praktika6.js",
+    "extra": "node --watch js/extra/simas.js",
     "test": "echo \"Labas rytas, Lietuva\" && exit 1"
   },
   "keywords": [],
