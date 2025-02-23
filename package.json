@@ -20,7 +20,7 @@
     "function": "node --watch js/intro/05-function.js",
     "for": "node --watch js/intro/04-for.js",
     "if": "node --watch js/intro/03-if.js",
-    "praktika": "node --watch js/praktika/praktika6.js",
+    "praktika": "node --watch js/praktika/praktika-codewars.js",
     "extra": "node --watch js/extra/simas.js",
     "test": "echo \"Labas rytas, Lietuva\" && exit 1"
   },

@@ -1,5 +1,7 @@
 
 //Masyvo metodas .spread
+//spread (...) isspausdina buvusia kopijos reiksme ir gali 
+// isideti kokias nori kopijas, bet pasalina []
 const a = [1, 2, 3, 4];
 const b = [...a];
 
@@ -20,6 +22,7 @@ const e = [3, 33];
 
 const f1 = [44,...c,...c, 4];
 console.log(f1);
+console.log('----------');
 
 
 const f2 = [...c,...d,...e, 5];
@@ -32,10 +35,12 @@ console.log('---------------');
 
 const c2 = [...c,...c];
 console.log(c2);
+console.log('---------------');
 
 const c4 = [...c2,...c2];
 console.log(c4);
-
+console.log('---------------');
+// nuima [], ...spread
 console.log(1, 11);
 console.log(...c);
 console.log(c);
@@ -64,6 +69,7 @@ g[0][1] = 777;
 console.log(g);
 console.log(h);
 console.log(j);
+console.log('--------------');
 console.log('--------------');
 
 const objA = { name: 'Jonas'};

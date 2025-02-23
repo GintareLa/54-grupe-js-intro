@@ -8,54 +8,59 @@ function sudetis(a, b) {
     return a + b;
 }
 console.log(`${n1} + ${n2} = ${sudetis(n1, n2)}`);
+console.log('--------------');
+
 //atimtis
 //anonimines funkcijos logika, priskirta kitamajam
 const skirtumas = function (a, b) {
     return a - b;
 }
 console.log(`${n1} - ${n2} = ${skirtumas(n1, n2)}`);
-
+console.log('--------------');
 //sandauga
 
 function sandauga(a, b) {
     return a * b;
 }
 console.log(`${n1} * ${n2} = ${sandauga(n1, n2)}`);
-
+console.log('--------------');
 //arrow function (rodykline funcija) (liambda function)
 
 const sandauga1 = (a, b) => {
     return a * b;
 }
 console.log(`${n1} * ${n2} = ${sandauga1(n1, n2)}`);
-
+console.log('--------------');
 //dalyba
 function dalyba(a, b) {
     return a / b;
 }
 console.log(`${n1} / ${n2} = ${dalyba(n1, n2)}`);
-
+console.log('--------------');
 //jeigu, logikos bloke (tie kur yra kabliataskis- return) yra tik 1 procedura
 // galima nerasyti{} ir return
 const dalyba1 = (a, b) => {
     return a / b;
 }
 console.log(`${n1} / ${n2} = ${dalyba1(n1, n2)}`);
-
+console.log('--------------');
 //kitas budas, kai nerasome {} ir return
 const dalyba3 = (a, b) => a / b;
 console.log(`${n1} / ${n2} = ${dalyba3(n1, n2)}`);
+console.log('--------------');
+
 
 function kvadratu(a) {
     return a * a;
 }
 console.log(`${n1} * ${n1} = ${kvadratu(n1, n1)}`);
-
+console.log('--------------');
 //jeigu,parametru bloke (pvz.: a) yra tik 1 parametras
 //galima nerasyti () 
 
 const kvadratu1 = a => a * a;
-console.log(`${n1} / ${n1} = ${kvadratu1(n1, n1)}`)
+console.log(`${n1} / ${n1} = ${kvadratu1(n1, n1)}`);
+console.log('--------------');
 
 //rodyklines f-jos naudojamos ne tik skaiciuose
 // Vardas -> V.
@@ -64,7 +69,7 @@ console.log(`${n1} / ${n1} = ${kvadratu1(n1, n1)}`)
 
 const nameInit = s => s[0] + '.';
 console.log(nameInit('Gintare'));
-
+console.log('--------------');
 //'Vardenis Pavardenis' -> 'V.P.'
 // 'Vardenis Pavardenis' -> 'V.P.'
 
@@ -76,16 +81,18 @@ console.log(nameInit('Gintare'));
 // 3b. Pavardenis -> P.
 
 // 4 V.P.
-function inicialiai(fullName) {
+function inicialai(fullName) {
     const nameParts = fullName.split(' ');
     const firstname = nameParts[0][0] + ' . ';
     const lastname = nameParts[1][0] + ' . ';
     return firstname + lastname;
 }
-console.log(inicialiai('Vardenis Pavrdenis'));
-console.log(inicialiai('Chuck Norris'));
-console.log(inicialiai('Bruce Willis'));
 
+
+console.log(inicialai('Vardenis Pavardenis'));
+console.log(inicialai('Chuck Norris'));
+console.log(inicialai('Bruce Willis'));
+console.log('--------------');
 ///
 
 const inicialaiArrow = fullName => {
@@ -94,7 +101,7 @@ const inicialaiArrow = fullName => {
     const lastname = nameParts[1][0] + '.';
     return firstname + lastname;
 }
-/*function inicialiai2 (fullName) {
+/*function inicialai2 (fullName) {
     const parts = fullName.split(' ');
     const firstname = nameInit(nameParts[0]);
     const lastname = nameInit(nameParts[1]);
@@ -107,6 +114,7 @@ function inicialai2(fullName) {
 console.log(inicialai2('Vardenis Pavrdenis'));
 console.log(inicialai2('Chuck Norris'));
 console.log(inicialai2('Bruce Willis'));
+console.log('--------------');
 
 // 5 -> false
 // 4 -> true
@@ -133,14 +141,17 @@ console.log('//', 3, '->', isEven(3));
 console.log('//', 2, '->', isEven(2));
 console.log('//', 1, '->', isEven(1));
 console.log('//', 0, '->', isEven(0));
-
+console.log('--------------');
 // Labas rytas, Lietuva! -> 3
 // Ką tu? Ką vakare? -> 4
-
+//pvz.: du budai, 1 budas(paprastas su function)
 function sakinys(text) {
     return text.split(' ').length;
 }
 console.log(sakinys('Labas rytas, Lietuva!'));
 console.log(sakinys('Ką tu? Ką vakare?'));
-
+console.log('--------------');
+// 2 budas, kai yra rodykline funkcija
 const sakinys2 = text => text.split(' ').length;
+console.log(sakinys2('Labas rytas, Lietuva!'));
+console.log(sakinys2('Ką tu? Ką vakare?'));

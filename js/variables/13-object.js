@@ -45,13 +45,14 @@ const crazy = {
 };
 
 console.log(crazy);
+console.log();
 console.log(crazy['title']);
 console.log(crazy['7']);
 console.log(crazy['isMarried']);
 console.log(crazy['atskiri zodziai']);
+console.log();
 
 console.log(crazy[7]);
-
 console.log(crazy.title);
 console.log(crazy.isMarried);
 console.log();
@@ -111,6 +112,7 @@ for (let i = 0; i < maryte.parents.length; i++) {
     console.log(parent.marks);
     
 }
+console.log();
 
 const countFatherMarks = maryte.parents[0].marks.length;
 let marksFatherVisaSuma = 0;

@@ -22,6 +22,7 @@ console.log('k:', k, 'm:', m);
 
 k.push(5);
 console.log('k:', k, 'm:', m);
+console.log();
 
 
 function arrayCopy(list) {
