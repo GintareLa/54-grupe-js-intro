@@ -83,3 +83,5 @@ console.log('-------------');
     j--;
     }
  }
+
+ //dar yra ciklas FOR..IN

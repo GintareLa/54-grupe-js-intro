@@ -4,6 +4,8 @@
   "description": "**labas rytas** , Lietuva!",
   "main": "index.js",
   "scripts": {
+    "mini": "node --watch js/extra/mini.js",
+    "summary": "node --watch js/summary/summary.js",
     "dest": "node --watch js/functions/18-dest.js",
     "loops": "node --watch js/loop/17-loops.js",
     "typeof": "node --watch js/functions/16-typeof.js",

@@ -19,7 +19,7 @@ console.log(n1);
 console.log(n2);
 console.log(nRest);
 console.log(nRest2);
-
+console.log('------');
 
 const [m1, m2, m3, m4, m5, m6] = numbers;
 console.log(m1, m2, m3, m4, m5, m6);
@@ -47,6 +47,7 @@ console.log('------');
 const t = [...numbers];
 console.log(t);
 console.log('------');
+
 //gaunasi tuscias masyvas
 const numbersList = [9, 99];
 const [y1, y2,...yRest] = numbersList;
