@@ -106,7 +106,7 @@ for(let i=0; i< k.length; i++) {
 }
 
 console.log(l1);
-console.log('--------------');
+console.log('-----l1--------');
 
 const k2 = [[4],[5, 55],7, [6, 66, 666]];
 const l2 = [];
