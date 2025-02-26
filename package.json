@@ -4,6 +4,10 @@
   "description": "**labas rytas** , Lietuva!",
   "main": "index.js",
   "scripts": {
+    "mini:letters": "node --watch js/extra/mini-letters.js",
+    "mini:for": "node --watch js/extra/mini-for.js",
+    "mini:max": "node --watch js/extra/mini-max.js",
+    "mini:digits": "node --watch js/extra/mini-digits.js",
     "mini": "node --watch js/extra/mini.js",
     "summary": "node --watch js/summary/summary.js",
     "dest": "node --watch js/functions/18-dest.js",
