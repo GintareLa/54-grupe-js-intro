@@ -11,7 +11,7 @@ console.log(`${n1} + ${n2} = ${sudetis(n1, n2)}`);
 console.log('--------------');
 
 //atimtis
-//anonimines funkcijos logika, priskirta kitamajam
+//anonimines funkcijos logika, priskirta kintamajam
 const skirtumas = function (a, b) {
     return a - b;
 }

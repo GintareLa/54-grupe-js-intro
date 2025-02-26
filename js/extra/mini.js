@@ -204,6 +204,12 @@ console.log( didziausiasSkaiciusSarase('pomidoras') );
 //rezultatas: “Pateikta netinkamo tipo reikšmė.”
 console.log( didziausiasSkaiciusSarase( [] ) );
 //rezultatas: “Pateiktas sąrašas negali būti tuščias.”
+console.log( didziausiasSkaiciusSarase(NaN) );
+//rezultatas: “Pateikta netinkamo tipo reikšmė.”
+console.log( didziausiasSkaiciusSarase(null));
+//rezultatas: “Pateikta netinkamo tipo reikšmė.”
+console.log( didziausiasSkaiciusSarase(-Infinity));
+//rezultatas: “Pateikta netinkamo tipo reikšmė.”
 console.log('-----------------');
 
 /*
@@ -248,7 +254,7 @@ function isrinktiRaides (text, number) {
         return 'Pirmojo kintamojo reikšmė yra netinkamo dydžio';
     } if (typeof number !== 'number') {
         return 'Antrasis kintamasis yra netinkamo tipo';
-    } if (number === Infinity || number === -Infinity) {
+    } if (number === Infinity || number === -Infinity|| number === null || isNaN(number)) {
         return 'Antrasis kintamasis yra netinkamo tipo';
     } if (number <= 0) {
         return 'Antrasis kintamasis turi būti didesnis už nulį';
@@ -275,6 +281,8 @@ console.log( isrinktiRaides('abc', 0));
 console.log( isrinktiRaides( 'abc', 4));
 //rezultatas: “Antrasis kintamasis turi būti ne didesnis už pateikto teksto ilgį.”
 console.log( isrinktiRaides( 1561, 2));
+console.log( isrinktiRaides( 'avd', NaN));
+console.log( isrinktiRaides( 'avd', -Infinity));
 console.log('-----------------');
 
 
